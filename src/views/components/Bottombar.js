@@ -4,7 +4,7 @@ let Bottombar = {
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
-                    This is my foot. There are many like it, but this one is mine.
+                    This is a tejaswi footer.
                 </p>
             </div>
         </footer>
