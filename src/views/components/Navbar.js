@@ -3,7 +3,7 @@ import RidesMenu from './RidesMenu.js';
 
 let Navbar = {
     render: async (loggedInUser) => {
-      loggedInUser = {username:'avinash'};
+      loggedInUser = {username:'tejaswi'};
         let view =  /*html*/`
              <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="container">
