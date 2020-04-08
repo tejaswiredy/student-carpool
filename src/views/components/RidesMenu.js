@@ -3,10 +3,10 @@ const RidesMenu = (loggedInUser = {}) => {
   if (username) {
     return `
       <a class="navbar-item" href="/#/">
-        Available rides
+        Rides Offered
       </a>
       <a class="navbar-item" href="/#/">
-        Request a ride
+        Rides Requested
       </a>
     `;
   }
