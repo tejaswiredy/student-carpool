@@ -1,4 +1,12 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+@import "~bulma/sass/utilities/initial-variables";
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+#landing-banner
+{
+    width: 100%;
+    max-height: 450px;
+    height: auto;
+}
