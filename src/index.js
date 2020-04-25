@@ -9,21 +9,23 @@ import Error404     from '_pages/Error404.js';
 import Signin       from '_pages/Signin.js';
 import Signout      from '_pages/Signup.js';
 import PostShow     from '_pages/PostShow.js';
+import Landing      from '_pages/Landing.js';
 
 import Navbar       from '_components/Navbar.js';
 import Bottombar    from '_components/Bottombar.js';
-
 
 import Utils        from './services/Utils.js';
 import SlideToggle        from './services/SlideToggle.js';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
-    '/'             : Home
+    '/home'         : Home
     , '/about'      : About
     , '/login'      : Signin
     , '/register'   : Signout
     , '/p/:id'      : PostShow
+    , '/landing'    : Landing
+    , '/'           : Landing
 };
 
 // The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
