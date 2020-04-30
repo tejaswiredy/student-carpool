@@ -16,6 +16,7 @@ import Bottombar    from '_components/Bottombar.js';
 
 import Utils        from './services/Utils.js';
 import SlideToggle        from './services/SlideToggle.js';
+import RidesOffered from './views/pages/RidesOffered';
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
@@ -26,7 +27,9 @@ const routes = {
     , '/p/:id'      : PostShow
     , '/landing'    : Landing
     , '/'           : Landing
+    , '/ridesoffered' : RidesOffered
 };
+
 
 // The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
 const router = async () => {

@@ -1,8 +1,9 @@
 let Landing = {
-    render : async (loggedUser = {}) => {
-        const { username = undefined }= loggedUser;
-        if(true) { // TODO: Update condition to load only if user not logged in --> if(!username)
-        let view =  /*html*/`
+  render: async (loggedUser = {}) => {
+    const { username = undefined } = loggedUser;
+    if (true) {
+      // TODO: Update condition to load only if user not logged in --> if(!username)
+      let view = /*html*/ `
         <div id="landing-banner-parent" class="box">
             <article class="media">
             <div class="media-content">
@@ -54,12 +55,11 @@ let Landing = {
                 </div>
             </div>
         </div>
-      `
-            return view
-        }
-    },
-    after_render: async () => {}
-        
-}
+      `;
+      return view;
+    }
+  },
+  after_render: async () => {},
+};
 
 export default Landing;
