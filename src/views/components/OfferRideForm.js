@@ -21,7 +21,7 @@ let OfferRideForm = {
             </div>
             <div class="field">
                 <div class="control">
-                    <input class="input" type="number" name="seats" placeholder="Number of seats...">
+                    <input class="input" type="number" min="1" name="seats" placeholder="Number of seats...">
                 </div>
             </div>
             <div class="field">
@@ -42,13 +42,22 @@ let OfferRideForm = {
     return view;
   },
   onSubmit: () => {
+    console.log("submitted");
     const formData = $("#offerRide").serializeArray();
+    console.log(formData);
   },
   after_render: function () {
     const vm = this;
 
     // Load date time picker
     $("input[name='datetime']").datetimepicker();
+
+    var autocomplete = new google.maps.places.Autocomplete(
+      $("input[name='from']")[0]
+    );
+    var autocomplete2 = new google.maps.places.Autocomplete(
+      $("input[name='to']")[0]
+    );
 
     // Adding submit event listener to the form
     const form = document.getElementById("offerRide");
