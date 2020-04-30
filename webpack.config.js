@@ -3,6 +3,8 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const EncodingPlugin = require('webpack-encoding-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require("webpack");
+
 
 // App directory
 const appDirectory = fs.realpathSync(process.cwd());
@@ -50,6 +52,11 @@ module.exports = {
     
     },
 
+    externals: {
+      jquery: "jQuery",
+    },
+  
+
     module: {
         rules: [
           {
@@ -89,6 +96,12 @@ module.exports = {
       new MiniCssExtractPlugin({
         filename: 'css/mystyles.css'
       }),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+      }),
+  
     ],
 
 
