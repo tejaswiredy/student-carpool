@@ -11,7 +11,6 @@ let Home = {
               </article>
           </div>
           <div id="landing-tiles-parent">
-              <div id="landing-tiles-horizontal-parent" class="tile is-ancestor">
                   <div class="tile is-horizontal is-12">
                       <div class="tile">
                           <div class="tile is-parent box">
@@ -43,7 +42,6 @@ let Home = {
                           </div>
                       </div>
                   </div>
-              </div>
               <div class="tile">
                       <div class="tile is-horizontal is-12">
                           <div id="landing-tiles-quote" class="tile is-parent box">
